@@ -17,13 +17,27 @@
 git  branch -d name - удалить ветку после слияния
 git branch -D  - удалить ветку без слияния
 ## Работа с удалкенными репозиториями.
+**Вариант 1.**
 1. Создаем репозиторий на сайте github
 2. Если мы хотим открыть удаленный репозиторий в VS, то используем код: 
+
 echo "# название репозитория" >> README.md
+
 git init
+
 git add README.md
+
 git commit -m "first commit"
+
 git branch -M main
+
 git remote add origin https://github.com/nastasyaly/1.git
+
 git push -u origin main
+
 3. Далее, чтобы перенести информацию из github в VS - нажимаем git pull, наоборот - git push
+**Вариант 2.**
+1. Создаем репозиторий на сайте github
+2. Копируем ссылку при посощи кнопки Code 
+3. Переносим ссылку в VS при помощи команды git ссылка
+4. Далее, чтобы перенести информацию из github в VS - нажимаем git pull, наоборот - git push
